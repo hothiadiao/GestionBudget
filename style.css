@@ -1,0 +1,112 @@
+body {
+  background-image:linear-gradient(to bottom, rgba(124, 243, 44, 0.5), rgba(243, 251, 243, 0.5)), url(images/budget.jpg) ;
+  background-position : left 20px top 5px;
+  background-position : right 20px top 1px;    
+  background-size: auto;
+ 
+  }
+
+p,text {
+  float : right;
+  margin-right : 30%;
+  margin: auto;
+  width: 33%;
+  font-weight: bold;
+  font-size: 200%;
+  color: #b83535;
+
+  
+
+}
+
+strong {
+  padding: 12px;
+  margin-right: 300px;
+  font-weight: bold;
+  
+}
+h5 {
+  text-align: right;
+  margin-right: 10%;
+}
+input {
+  padding: 12px;
+  margin-top:25px ;
+}
+button  {
+ 
+  padding: 12px;
+  margin-top: 10px ;
+}
+  h2{
+    text-align :center;
+    color: #FF0000;
+    font-size: 190%;
+    
+
+  }
+  table{
+    border-collapse: collapse;
+    width: 420px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+ 
+  fieldset {
+    
+    height: 600px;
+    width: 56%;
+    margin: auto;
+    text-align: center;
+    border-color: rgba(224, 10, 10, 0.36);
+    border-width: 5px;
+  }
+  
+  td{
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 100%;
+  }
+ td input {
+    background-color: rgba(128, 255, 0, 0.117);
+    border: darkgreen;
+  }
+ .t1 {
+  width: 605px;
+ }
+ .t2 {
+  width: 605px;
+  
+ }
+ .t3 {
+  width: 300px;
+  
+
+ }
+ .t4 {
+  width: 300px;
+  
+
+ }
+ 
+
+  .f1 {
+    height: 30%; 
+    width: 2%;
+    margin-top: 5px;
+    float:left;
+    margin-left: 21%;
+   
+}
+.f2 {
+  height: auto;
+  width:2%;
+  margin-top: 5px;
+  float:right;
+  margin-right: 21%;
+}
+.valider {
+  float: right;
+  margin-right: 2%;
+  width: 26%;
+}
