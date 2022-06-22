@@ -45,7 +45,7 @@ button  {
     
 
   }
-  table{
+  table {
     border-collapse: collapse;
     width: 420px;
     margin-left: 50px;
@@ -85,7 +85,6 @@ button  {
  }
  .t4 {
   width: 300px;
-  
 
  }
  
@@ -95,18 +94,93 @@ button  {
     width: 2%;
     margin-top: 5px;
     float:left;
-    margin-left: 21%;
+    margin-left: 20%;
    
 }
 .f2 {
-  height: auto;
+  height: 30%;
   width:2%;
   margin-top: 5px;
   float:right;
-  margin-right: 21%;
+  margin-right: 20%;
 }
 .valider {
   float: right;
   margin-right: 2%;
   width: 26%;
+}
+
+
+/* Partie pour affichage de la liste des revenus 
+.listeRevenu {
+  float:left;
+  width:200px;
+  padding-top:2px;
+  padding-left: 2px;  
+  text-align: left;
+}
+*/
+.listeRevenu {
+vertical-align: text-top;
+}
+.liste {
+  margin-left: 20%;
+  vertical-align: middle;
+}
+
+.listeRevenu .budget-item {
+	display: flex;
+	align-items: center;
+	background-color: rgb(80, 33, 33);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	margin-bottom: 1rem;
+}
+/*
+.budget-item label {
+	display: block;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+*/
+.budget-item .budget-content {
+	flex: 1 1 0%;
+}
+
+.budget-item .budget-content input {
+	color: var(--dark);
+	font-size: 1.125rem;
+}
+
+.budget-item .actions {
+	display: flex;
+	align-items: center;
+}
+
+.budget-item .actions button {
+	display: block;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	color: #FFF;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.budget-item .actions button:hover {
+	opacity: 0.75;
+}
+
+.budget-item .actions .edit {
+	margin-right: 0.5rem;
+	background-color: var(--primary);
+}
+
+.budget-item .actions .delete {
+	background-color: var(--danger);
+}
+
+.budget-item.done .budget-content input {
+	text-decoration: line-through;
+	color: var(--grey);
 }
