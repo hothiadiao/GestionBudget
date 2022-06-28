@@ -49,10 +49,13 @@ window.addEventListener('load', () => {
        
 		Displaybudgets()
 		
+		
 	})
 
-	Displaybudgets()
+	Displaybudgets();
 
+   
+   
 
 })
 
@@ -79,8 +82,8 @@ function Displaybudgets () {
 		edit.classList.add('edit');
 		deleteButton.classList.add('delete');
 
-		titre2.innerHTML = `<input type="text" value="${budget.titre2}" readonly>`;
-		montant2.innerHTML = `<input type="text" value="${budget.montant2}"  readonly>`;
+		titre2.innerHTML = `<input  type="text" value="${budget.titre2}" readonly>`;
+		montant2.innerHTML = `<input  type="text" value="${budget.montant2}"  readonly>`;
 
 		edit.innerHTML = 'Modifier';
 		deleteButton.innerHTML = 'Supprimer';
@@ -93,7 +96,6 @@ function Displaybudgets () {
 		budgetItem.appendChild(titre2);
 		budgetItem.appendChild(montant2);
 		budgetItem.appendChild(actions);
-
 		budgetList.appendChild(budgetItem);
 
 
@@ -104,9 +106,15 @@ function Displaybudgets () {
 			inputMontant2.removeAttribute('readonly');
 			inputTitre2.focus();
 			inputMontant2.focus();
-			input.addEventListener('blur', (e) => {
-				input.setAttribute('readonly', true);
+			inputTitre2.addEventListener('blur', (e) => {
+				inputTitre2.setAttribute('readonly', true);
 				budget.titre2 = e.target.value;
+				localStorage.setItem('budgets', JSON.stringify(budgets));
+				Displaybudgets()
+			})
+			
+			inputMontant2.addEventListener('blure', (e) => {
+				inputMontant2.setAttribute('readonly', true);
 				budget.montant2 = e.target.value;
 				localStorage.setItem('budgets', JSON.stringify(budgets));
 				Displaybudgets()
@@ -124,7 +132,12 @@ function Displaybudgets () {
 
 
 }
-function Somme(){
-	alert(document.getElementById("montant2").value + document.listeRevenu.liste.value);
-
-}
+const btnajout = document.getElementById("valider2");
+btnajout.addEventListener("click", addition); // Note qu'on passe la fonction add en paramètre, on ne l'appelle pas, i.e. on écrit "add" et pas "add()".
+function addition(){
+	const montantajout = parseInt(document.getElementById("montant2").value); // On récupère la valeur de l'élément html. Comme c'est une chaine de caractères on la transforme en entier.
+	const solde  = parseInt(document.getElementById("bud").value);// On récupère la valeur du span "solde" qu'on transforme aussi en entier.	
+	letd= solde + montantajout;
+	console.log(d)
+	}
+	

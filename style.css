@@ -124,18 +124,31 @@ button  {
 vertical-align: text-top;
 }
 .liste {
-  margin-left: 20%;
+  margin-left: 5%;
   vertical-align: middle;
+  width: 100%;
+  margin-top: auto;
 }
-
-.listeRevenu .budget-item {
-	display: flex;
-	align-items: center;
+.listeRe {
+ margin-top :100px;
+  
+}
+ .budget-item {
+ /* display: flex;*/
+	align-items:left;
 	background-color: rgb(80, 33, 33);
-	padding: 1rem;
+	padding:  50px 50px none;
 	border-radius: 0.5rem;
 	box-shadow: var(--shadow);
 	margin-bottom: 1rem;
+
+  display: flex; /* the default for span */
+  width: 0px;
+  height: 35px;
+ 
+  
+  background-color: yellow; 
+
 }
 /*
 .budget-item label {
@@ -154,17 +167,21 @@ vertical-align: text-top;
 }
 
 .budget-item .actions {
-	display: flex;
-	align-items: center;
+	display:inline-flex;
+  margin-top: 45px;
+	align-items:center;
+margin: 50px 50px none;
+
 }
 
 .budget-item .actions button {
 	display: block;
 	padding: 0.5rem;
 	border-radius: 0.25rem;
-	color: #FFF;
+	color: rgb(31, 9, 138);
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
+  height: 45px;
 }
 
 .budget-item .actions button:hover {
@@ -184,3 +201,82 @@ vertical-align: text-top;
 	text-decoration: line-through;
 	color: var(--grey);
 }
+
+/*CSS de la partie ajouter dépense */
+.listeDepense {
+  vertical-align: text-top;
+  }
+  .listeD {
+    margin-left: 5%;
+    vertical-align: middle;
+    width: 100%;
+    margin-top: 0px;
+  }
+   .depense-item {
+   /* display: flex;*/
+    align-items:left;
+    background-color: rgb(80, 33, 33);
+    padding:  50px 50px none;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+  
+    display: flex; /* the default for span */
+    width: 0px;
+    height: 35px;
+   
+    
+    background-color: yellow; 
+  
+  }
+  /*
+  .budget-item label {
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  */
+  .depense-item .depense-content {
+    flex: 1 1 0%;
+  }
+  
+  .depense-item .depense-content input {
+    color: var(--dark);
+    font-size: 1.125rem;
+  }
+  
+  .depense-item .actions {
+    display:inline-flex;
+    margin-top: 45px;
+    align-items:center;
+    margin: 50px 50px none;
+  
+  }
+  
+  .depense-item .actions button {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: rgb(31, 9, 138);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    height: 45px;
+  }
+  
+  .depense-item .actions button:hover {
+    opacity: 0.75;
+  }
+  
+  .depense-item .actions .edit {
+    margin-right: 0.5rem;
+    background-color: var(--primary);
+  }
+  
+  .depense-item .actions .delete {
+    background-color: var(--danger);
+  }
+  
+  .depense-item.done .depense-content input {
+    text-decoration: line-through;
+    color: var(--grey);
+  }

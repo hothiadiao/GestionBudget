@@ -14,18 +14,26 @@
   <!-- <form action="#"> --> 
         <fieldset>
             <h2>GESTION BUDGET</h2>
-            <p><label for="Budget">Solde<br><input type="text" id="Budget" name="Budget"></label></p>     
+            <p><label for="budget">Solde</label><br><input type="text" id="solde"></p>     
             <p><label for="depense" >Dépense<br><input  id="depense" name="depense" value=""></label></p>
-            <p><label for="Solde">Budget<br> <input type="text" id="Solde" name="Solde"> </label></p>
+            <p><label for="bud">Budget</label><br> <input type="number" id="bud" name="bud" value="0"> </p>
             <h5>Budget-Dépense=Solde</h5> 
-            <strong>Liste des dépenses</strong>
+            <section class="listeDepense">
+            <div><strong>Liste des dépenses</strong>
              <button style="background-color: red;"  id="boutonDepense">Ajouter Depenses</button>
-             <table class="t1">
+            </div>
+             <div class="listeD" id="listeDepense"></div>
+           
+           
+        </section>
+            
+                  <!--       <table class="t1">
                     <tr>
                         <td>Titre</td>
                         <td>Montant</td>
                         <td>Actions</td>
                     </tr>
+                    --> 
                   <!--
                   <tr>
                         <td id="t1"></td>
@@ -38,22 +46,23 @@
                         <td>100</td>
                         <td><a href="ajouterDepense">Modifier</a> | <a href="ajouterDepense">Supprimer</a></td>
                     </tr>  
-                    -->          
+                            
                 </table>
-        
+        -->  
        
         <!--section pour afficher la liste des revenus --> 
-        
+        <section class="listeRevenu">
+            <div id="listeRe">
         <strong>Liste des revenus</strong>
         <button style="background-color: blue;"  id="boutonRevenu">Ajouter Revenu</button> 
-                      <!-- <table class="t2">
+    </div>            <!-- <table class="t2">
                     <tr>
                         <td>Titre</td>
                         <td>Montant</td>
                         <td>Actions</td>
                     </tr>
                     --> 
-                    <section class="listeRevenu"></section>
+                    
                      <div class="liste" id="listeRevenu"></div>
                    
                    
@@ -75,6 +84,7 @@
  </fieldset>
  <fieldset class="f1">
    <h2> Ajouter Dépense</h2>
+   <form id="ajouterDepense"> 
            <table class="t3">
            <tr>
                <td>Titre</td>
@@ -85,7 +95,8 @@
             <td><input type="text" id="montant1" name="montant1"></td>
         </tr>
     </table>
-    <button class="valider" style="background-color: red;"  id="valider1">Valider</button>  
+    <button type="submit"  class="valider1" style="background-color: red;"  id="valider1">Valider</button>  
+</form>
 </fieldset>
      
     <fieldset class="f2">
@@ -101,9 +112,10 @@
                      <td><input type="text" id="montant2" name="montant2"></td>
                  </tr>
                 </table>
-                <button type="submit" class="valider" style="background-color: blue;"  id="valider2" >Valider</button>
+                <button type="submit" class="valider2" style="background-color: blue;"  id="valider2" >Valider</button>
             </form> 
             </fieldset>
-            <script src="style.js" defer></script>        
+            <script src="style.js"></script>  
+            <script src="ajouterDepense.js"></script>      
     </body>
     </html>
