@@ -14,9 +14,9 @@
   <!-- <form action="#"> --> 
         <fieldset>
             <h2>GESTION BUDGET</h2>
-            <p><label for="budget">Solde</label><br><input type="text" id="solde"></p>     
-            <p><label for="depense" >Dépense<br><input  id="depense" name="depense" value=""></label></p>
-            <p><label for="bud">Budget</label><br> <input type="number" id="bud" name="bud" value="0"> </p>
+            <p><label for="sold">Solde</label><br><input type="number" id="sold" value="0"></p>     
+            <p><label for="dep" >Dépense<br><input type="number" id="dep" name="dep" value="0"></label></p>
+            <p><label for="bud">Budget</label><br> <input type="number" id="bud" name="bud" value="0" > </p>
             <h5>Budget-Dépense=Solde</h5> 
             <section class="listeDepense">
             <div><strong>Liste des dépenses</strong>
@@ -112,10 +112,11 @@
                      <td><input type="text" id="montant2" name="montant2"></td>
                  </tr>
                 </table>
-                <button type="submit" class="valider2" style="background-color: blue;"  id="valider2" >Valider</button>
+                <button type="submit" class="valider2" style="background-color: blue;"  id="valider2">Valider</button>
             </form> 
             </fieldset>
             <script src="style.js"></script>  
-            <script src="ajouterDepense.js"></script>      
+            <script src="ajouterDepense.js"></script> 
+            <script src="soldee.js"></script>         
     </body>
     </html>

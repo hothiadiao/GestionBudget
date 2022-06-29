@@ -100,3 +100,13 @@ function Displaydepenses () {
 
 
 }
+const btnDepense = document.getElementById("valider1");
+btnDepense.addEventListener("click", depense); // Note qu'on passe la fonction add en paramètre, on ne l'appelle pas, i.e. on écrit "add" et pas "add()".
+function depense(){
+var montantDepense = parseInt(document.getElementById("montant1").value); // On récupère la valeur de l'élément html. Comme c'est une chaine de caractères on la transforme en entier.
+var depense1 = parseInt(document.getElementById("dep").value);// On récupère la valeur du span "solde" qu'on transforme aussi en entier.	
+var depe = depense1 + montantDepense;
+document.getElementById("dep").value = depe;
+//console.log(d)
+	}
+	

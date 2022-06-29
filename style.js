@@ -135,9 +135,13 @@ function Displaybudgets () {
 const btnajout = document.getElementById("valider2");
 btnajout.addEventListener("click", addition); // Note qu'on passe la fonction add en paramètre, on ne l'appelle pas, i.e. on écrit "add" et pas "add()".
 function addition(){
-	const montantajout = parseInt(document.getElementById("montant2").value); // On récupère la valeur de l'élément html. Comme c'est une chaine de caractères on la transforme en entier.
-	const solde  = parseInt(document.getElementById("bud").value);// On récupère la valeur du span "solde" qu'on transforme aussi en entier.	
-	letd= solde + montantajout;
-	console.log(d)
+var montantajout = parseInt(document.getElementById("montant2").value); // On récupère la valeur de l'élément html. Comme c'est une chaine de caractères on la transforme en entier.
+var solde = parseInt(document.getElementById("bud").value);// On récupère la valeur du span "solde" qu'on transforme aussi en entier.	
+var d = solde + montantajout;
+document.getElementById("bud").value = d;
+//console.log(d)
+//depense();
+//document.getElementById("sold").value = d-depe;
+
 	}
 	
